@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#581845,#ee963f );
+  color: #fff;
+  line-height: 1.6;
+}
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: cursive;
+    background: linear-gradient(#C70039, #581845);
+    color: white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.navbar .brand-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #d6493a;
+    border-radius: 15px;
+}
+
+.cta-button {
+    text-align: center;
+    background-color: #d6493a;
+    color: white;
+    margin-right: 20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #f36209;
+}
+
+/* Burger menu styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Responsive menu - Hide nav-links and show burger icon on smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #f36209;
+        padding: 20px 0;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
+section {
+  padding: 50px 0;
+  color: #fff;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
+.card-group{
+	 display: flex;
+    gap: 20px;
+	
+	
+}
+
+.card-body 
+{
+	/* Set the background color for the card body */
+  color: #fff; /* Set the text color for the card body */
+   background-color: transparent;  
+}
+
+.card-title 
+{
+  color: #007bff; /* Set the color for the card title */
+  font-weight: bold; /* Optional: make the title bold */
+  text-align:center;
+}
+
+.card
+ {
+  transform: scale(1.01); /* Slightly enlarge the card */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.card:hover
+ {
+  transform: scale(1.1); /* Enlarge the card on hover */
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
